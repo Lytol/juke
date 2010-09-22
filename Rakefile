@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "juke"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{JSON API steps for Cucumber}
+    gem.description = %Q{JSON API steps for Cucumber, hand-crafted for you in Juke *nod to Aruba*}
     gem.email = "bsmith@swig505.com"
     gem.homepage = "http://github.com/Lytol/juke"
     gem.authors = ["Brian Smith"]
