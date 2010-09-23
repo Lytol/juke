@@ -38,6 +38,10 @@ Then /^(?:|response )should equal (.+)$/ do |object|
   response_body.should == eval(object)
 end
 
+Then /^(?:|response )should have (.+)$/ do |obj|
+  response_body.should include obj
+end
+
 Then /^status should be (\d{3})$/ do |status|
   response_status.should == status.to_i
 end

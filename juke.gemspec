@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "VERSION",
+     "juke.gemspec",
      "lib/juke.rb",
      "lib/juke/adapters/rack.rb",
      "lib/juke/adapters/rails.rb",
