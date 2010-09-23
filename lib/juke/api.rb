@@ -1,3 +1,5 @@
+require 'forwardable'
+
 module Juke
   module API
     extend Forwardable
