@@ -42,6 +42,13 @@ Then /^(?:|response )should have (.+)$/ do |obj|
   response_body.should include obj
 end
 
+Then /^(?:|response )should include hash:$/ do |name_value_pairs|
+  name_value_pairs.rows_hash.each do |key, value|
+    response_body.should have_key(key)
+    response_body[key].should == value
+  end
+end
+
 Then /^status should be (\d{3})$/ do |status|
   response_status.should == status.to_i
 end
